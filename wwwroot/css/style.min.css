@@ -56,15 +56,15 @@ h1, h2, h3, h4, h5, h6, p {
 section .semi-title {
     margin-bottom: 10px
 }
-
     section .semi-title .animated-circles {
         color: #b59a6d;
         font-weight: 600;
+        font-size: 24px;
         display: flex;
         align-items: center;
         position: relative;
         -moz-column-gap: 10px;
-        column-gap: 10px
+        column-gap: 10px;
     }
 
 section .small-circle-start {
@@ -1488,7 +1488,7 @@ header .home-three {
             color: #000;
             position: relative;
             display: inline;
-            font-size: 16px;
+            font-size: 20px;
             margin: 20px;
             padding: 0px
         }
@@ -2336,11 +2336,12 @@ header .home-three {
                 column-gap: 10px
             }
 
-                .home-one .about-company .company-details .company-list ul li .square {
+                ul li .square {
                     content: "";
                     background-color: #b59a6d;
                     width: 10px;
-                    height: 10px
+                    height: 10px;
+                    display:inline-flex;
                 }
 
     .home-one .about-company .company-details .company-videos {
@@ -2819,8 +2820,10 @@ header .home-three {
 
         .home-one .city-highlights-photos .card img {
             transition: transform 2s;
-            max-height: 450px
-        }
+            max-height: 450px;
+            min-height: 400px;
+            object-fit: cover;
+        }   
 
         .home-one .city-highlights-photos .card:hover img {
             transform: scale(1.1)
@@ -7351,7 +7354,8 @@ header .home-three {
 .projects-grid .banner .images-optimization img {
     width: 100%;
     min-height: 200px;
-    max-height: 426px
+    max-height: 426px;
+    object-fit: cover;
 }
 
 .projects-grid .banner .images-optimization .cover-images-overlay {
@@ -7428,11 +7432,15 @@ header .home-three {
 
 .projects-grid .grid .second-images {
     box-sizing: border-box;
-    overflow: hidden
+    overflow: hidden;
+    height: 350px;
+    border-radius: 10px;
 }
 
     .projects-grid .grid .second-images img {
-        transition: transform 2s
+        transition: transform 2s;
+        height: 100%;
+        object-fit: cover;
     }
 
     .projects-grid .grid .second-images:hover img {
@@ -7448,21 +7456,21 @@ header .home-three {
             top: 10px;
             right: 10px;
             background-color: #b59a6d;
-            padding: 20px;
+            padding: 10px 18px;
             text-align: center;
-            border-radius: 20px 0px 0px 0px
+            border-radius: 20px 0px 0px 0px;
         }
 
             .projects-grid .grid .second-images .content .right-content a {
-                color: #fff;
+                color: #212529;
                 display: flex;
-                flex-direction: column
+                align-items: center;
             }
 
             .projects-grid .grid .second-images .content .right-content i {
-                animation: arrowBtn 2s ease infinite;
+                
                 font-size: 18px;
-                margin-left: 0px
+                margin-left: 8px
             }
 
 @keyframes arrowBtn {
@@ -7486,9 +7494,9 @@ header .home-three {
     left: 10px;
     bottom: 10px;
     width: 80%;
-    padding: 20px;
+    padding: 10px 15px;
     border-radius: 0px 20px 0px 0px;
-    transition: ease 2s all
+    transition: ease 2s all;
 }
 
 .projects-grid .grid .third-images {
@@ -7701,11 +7709,11 @@ header .home-three {
         min-height: 300px
     }
 }
-
 .projects-details .banner .images-optimization img {
     width: 100%;
     min-height: 200px;
-    max-height: 426px
+    max-height: 426px;
+    object-fit: cover;
 }
 
 .projects-details .banner .images-optimization .cover-images-overlay {
@@ -8879,7 +8887,6 @@ header .home-three {
 
 footer {
     background-color: #11141b;
-    padding: 120px 0px 0px 0px
 }
 
     footer .subscribe-field {
@@ -9150,8 +9157,32 @@ footer .term-and-condition .to-top.active {
         }
 
         footer .subscribe-field form {
-            margin: 0 auto
+            margin: 0 auto;
         }
 }
 
-/*# sourceMappingURL=style.min.css.map */
+/*# Sibankar dey Css */
+.hindi-text {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+}
+    .hindi-text span {
+        font-family: 'Noto Sans Devanagari', sans-serif !important;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+    }
+.accordion-button:not(.collapsed)::after {
+    /* background-image: var(--bs-accordion-btn-active-icon); */
+    transform: var(--bs-accordion-btn-icon-transform);
+    color: #b59a6d !important;
+    filter: brightness(0) saturate(100%) invert(70%) sepia(8%) saturate(1612%) hue-rotate(359deg) brightness(89%) contrast(89%);
+}
+.accordion-button {
+    font-size: 20px;
+    font-weight:600;
+}
+.accordion-body {
+    font-size: 18px;
+}
+.brand-logo{
+    padding: 10px 0;
+}

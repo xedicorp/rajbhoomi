@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&amp;family=Jost:ital,wght@0,100..900;1,100..900&amp;family=Manrope:wght@200..800&amp;family=Raleway:ital,wght@0,100..900;1,100..900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
           rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+
     <!-- Link slick slider CSS -->
     <link rel="stylesheet" href="~/css/slick.css">
     <link rel="stylesheet" href="~/css/slick-theme.css">
@@ -49,18 +51,7 @@
                                 </a>
                             </div>
                             <div class="language-socialLink d-flex ms-auto">
-                                <div class="language">
-                                    <label for="language" class="text-white">Language:</label>
-                                    <select id="language">
-                                        <option value="english">English</option>
-                                        <option value="mandarin">Mandarin</option>
-                                        <option value="hindi">Hindi</option>
-                                        <option value="french">French</option>
-                                        <option value="modern">Modern</option>
-                                        <option value="bengali">Bengali</option>
-                                        <option value="Russian">Russian</option>
-                                    </select>
-                                </div>
+                                
                                 <div class="socialLink d-flex">
                                     <p class="d-inline-block text-white">Follow on:</p>
                                     <ul class="d-flex">
@@ -129,41 +120,23 @@
 
     <footer>
         <div class="container">
-            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2 subscribe-field g-4 ">
-                <div class="col ">
-                    <div class="subscribe-content position-relative ">
-                        <div class="divide-column position-absolute "></div>
-                        <h3 class="tow ms-3 mb-1 text-white">Subscribe To Newsletter</h3>
-                        <p class=" ms-3 text-white-50">Stay updated with our latest news and offers.</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <form action="#" class="d-flex ">
-                        <input type="email" name="email" id="footerEmail" placeholder="Enter Your Email Address"
-                               required>
-                        <button class="subscript" type="submit">Subscript</button>
-                    </form>
-                </div>
-            </div>
+            
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 g-4 our-details">
                 <div class="col">
                     <div class="card h-100 bg-transparent border-0  ">
                         <a href="index.html">
-                            <img src="images/multiple-use/footer/footer-logo.png"
+                            <img src="~/images/others/rajbhoomi_logo.png"
                                  class="card-img-top img-fluid " alt="...">
                         </a>
                         <div class="card-body px-0 py-3 ">
                             <p class="card-text text-white ">
-                                At Citywall, we are dedicated to enhancing urban living
-                                through innovative technology and sustainable practices
+                                Designed for comfort, community, and long-term value.
+
                             </p>
                         </div>
                         <div class="social-info">
-                            <div class="position-relative">
-                                <div class="divide-column position-absolute "></div>
-                                <h4 class="ms-3 text-white ">Social Info</h4>
-                            </div>
-                            <ul class="d-flex mt-2 gap-3 ms-3  ">
+                            
+                            <ul class="d-flex mt-3 gap-3  ">
                                 <li>
                                     <a class="text-white " href="#">
                                         <i class="link-icons fa-brands fa-facebook-f"></i>
@@ -189,15 +162,30 @@
                         <div class="industry-info">
                             <div class="position-relative">
                                 <div class="divide-column position-absolute "></div>
-                                <h4 class="ms-3 text-white ">Industry Sector</h4>
+                                <h4 class="ms-3 text-white ">Usefull Links</h4>
                             </div>
                             <ul class="d-flex flex-column  mt-3 row-gap-2  ms-3  ">
-                                <li><a class="text-white " href="#">Our Time</a></li>
-                                <li><a class="text-white " href="#">How it works</a></li>
-                                <li><a class="text-white " href="#">Office Create</a></li>
-                                <li><a class="text-white " href="#">Residential Explore</a></li>
-                                <li><a class="text-white " href="#">Terms $ Service</a></li>
-                                <li><a class="text-white " href="#">Jos $ unemployment</a></li>
+                                <li><a class="text-white " href="@Url.Action("About","Home")">About</a></li>
+                                <li><a class="text-white " href="@Url.Action("Faqs", "Home")">Faqs</a></li>
+                                <li><a class="text-white " href="@Url.Action("Contact", "Home")">Contact</a></li>
+                                <li><a class="text-white " href="@Url.Action("Privacy", "Home")">Privacy Policy</a></li>
+                                <li><a class="text-white " href="@Url.Action("Terms", "Home")">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 bg-transparent border-0">
+                        <div class="touch-info">
+                            <div class="position-relative">
+                                <div class="divide-column position-absolute "></div>
+                                <h4 class="ms-3 text-white ">Projects</h4>
+                            </div>
+                            <ul class="d-flex flex-column  mt-3 row-gap-2  ms-3  ">
+                                <li><a class="text-white " href="">Vinayak Enclave</a></li>
+                                <li><a class="text-white " href="#">Aditya City</a></li>
+                                <li><a class="text-white " href="#">Govind Ashray</a></li>
+                                <li><a class="text-white " href="#">Vaishali Enclave</a></li>
                             </ul>
                         </div>
                     </div>
@@ -210,57 +198,18 @@
                                 <h4 class="ms-3 text-white ">Get In Touch</h4>
                             </div>
                             <ul class="d-flex flex-column  mt-3 row-gap-2  ms-3  ">
-                                <li class="text-white mb-2">Valentin, Street Road 24, New York, USA - 67452</li>
+                                <li class="text-white mb-2">Vande Mataram Marg, Mansarovar, Jaipur, Rajasthan 302020</li>
                                 <li>
                                     <a class="text-white" href="tel:+1999806915">
                                         <i class="bi bi-telephone phone"></i>
-                                        +199(980) 6915
+                                        +111 111 1111
                                     </a>
                                 </li>
                                 <li>
                                     <a class="text-white" href="mailto:shifamoni@gmail.com">
                                         <i class="bi bi-envelope email"></i>
-                                        shifamoni@gmail.com
+                                        rajbhoomi@gmail.com
                                     </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 bg-transparent border-0">
-                        <div class="working-info">
-                            <div class="position-relative">
-                                <div class="divide-column position-absolute "></div>
-                                <h4 class="ms-3 text-white ">Working Hours</h4>
-                            </div>
-                            <ul class="mt-3 ms-3 text-white   ">
-                                <li>
-                                    <div class="d-flex justify-content-between ">
-                                        <div>Monday</div>
-                                        <div>10.00 - 11.00</div>
-                                    </div>
-                                    <hr>
-                                </li>
-                                <li>
-                                    <div class="d-flex justify-content-between ">
-                                        <div>Tuesday</div>
-                                        <div>11.00 - 12.00</div>
-                                    </div>
-                                    <hr>
-                                </li>
-                                <li>
-                                    <div class="d-flex justify-content-between ">
-                                        <div>Wednesday</div>
-                                        <div>01.00 - 02.00</div>
-                                    </div>
-                                    <hr>
-                                </li>
-                                <li>
-                                    <div class="d-flex justify-content-between ">
-                                        <div>Thursday</div>
-                                        <div>02.00 - 03.00</div>
-                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -272,18 +221,15 @@
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center copy-right-content ">
                     <div class="text-white copy-right">
-                        © 2024 - 2025 | Alrights reserved by <span>Website_Stock</span>
+                        © 2025 | All rights reserved by <span>Rajbhoomi</span>
                     </div>
                     <div class="button-div">
                         <a href="#" class="up-to-down-btn to-top"><i class="bi bi-chevron-double-up"></i></a>
                     </div>
                     <div>
                         <ul class="d-flex gap-3 ">
-                            <li><a class="text-white " href="#">Terms</a></li>
-                            <li><a class="text-white " href="#">Privacy</a></li>
-                            <li><a class="text-white " href="#">License</a></li>
-                            <li><a class="text-white " href="#">Privacy</a></li>
-                            <li><a class="text-white " href="#">Policy</a></li>
+                            <li><a class="text-white " href="#">Terms & Conditions</a></li>
+                            <li><a class="text-white " href="#">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
