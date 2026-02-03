@@ -191,7 +191,7 @@ section .small-circle-end::after {
     .sentence-underline .banner-semi-title::before {
         content: "";
         position: absolute;
-        border-bottom: 1px solid rgba(255,255,255,.506);
+        border-bottom: 1px solid #fff;
         width: 100%;
         left: 0;
         top: 0;
@@ -1485,14 +1485,15 @@ header .home-three {
     }
 
         .home-one .navbar-details .navigation-link .navbar-nav .nav-item .nav-link {
-            color: #fff;
+            color: #203351;
             position: relative;
             display: inline;
             font-size: 20px;
+            background: #fff;
             margin: 20px;
-            padding: 0px
+            padding: 10px;
+            border-radius: 5px;
         }
-
             .home-one .navbar-details .navigation-link .navbar-nav .nav-item .nav-link::after {
                 border-bottom: 1px solid #203351;
                 content: "";
@@ -2184,8 +2185,8 @@ header .home-three {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,.5);
+    bottom: 0;/*
+    background-color: rgba(0,0,0,.5);*/
     position: absolute;
     height: 100%
 }
@@ -2193,16 +2194,25 @@ header .home-three {
 .home-one .banner .images-optimization .banner-content {
     align-items: center
 }
+.banner-content h1 {
+    background: #fff;
+    width:fit-content;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-size:40px;
+    font-size:40px;
+}
 
-    .home-one .banner .images-optimization .banner-content .buttons .cityWall-btn {
-        display: flex;
-        gap: 20px;
-        margin-top: 40px
-    }
+.home-one .banner .images-optimization .banner-content .buttons .cityWall-btn {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px
+}
 
 .home-one .banner .images-optimization .banner-semi-title {
     font-size: 22px;
-    line-height: 30px
+    line-height: 30px;
+    color: #fff;
 }
 
 .home-one .banner .leFadeInRight span {
@@ -9239,5 +9249,5 @@ footer .term-and-condition .to-top.active {
 }
 
 .banner{
-    margin-top:-143px;
+    margin-top:-162px;
 }
