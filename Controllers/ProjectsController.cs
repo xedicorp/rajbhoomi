@@ -12,5 +12,17 @@ namespace Rajbhoomi.Controllers
         {
             return View();
         }
+        public IActionResult UC()
+        {
+            return View();
+        }
+        public IActionResult UCP()
+        {
+            return View();
+        }
+        public IActionResult Janakpuri()
+        {
+            return View();
+        }
     }
 }
