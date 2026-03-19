@@ -2195,12 +2195,14 @@ header .home-three {
     align-items: center
 }
 .banner-content h1 {
-    background: #fff;
     width:fit-content;
     padding: 5px 15px;
     border-radius: 8px;
     font-size:40px;
     font-size:40px;
+}
+.banner.home-page .banner-content h1 {
+    background: #fff;
 }
 
 .home-one .banner .images-optimization .banner-content .buttons .cityWall-btn {
@@ -7489,9 +7491,12 @@ header .home-three {
                 display: flex;
                 align-items: center;
             }
+            .projects-grid .grid .second-images .content .right-content a span{
+                color: #fff;
+            }
 
             .projects-grid .grid .second-images .content .right-content i {
-                
+                color: #fff;
                 font-size: 18px;
                 margin-left: 8px
             }
@@ -7520,12 +7525,16 @@ header .home-three {
     padding: 10px 15px;
     border-radius: 0px 20px 0px 0px;
     transition: ease 2s all;
+    color:#fff;
 }
+    .projects-grid .grid .second-images .content .bottom-content h5 {
+        color: #fff;
+    }
 
-.projects-grid .grid .third-images {
-    box-sizing: border-box;
-    overflow: hidden
-}
+    .projects-grid .grid .third-images {
+        box-sizing: border-box;
+        overflow: hidden
+    }
 
     .projects-grid .grid .third-images img {
         transition: transform 2s
