@@ -1,6 +1,27 @@
 ﻿
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Universal City – Premium Township Plots for Sale | Rajbhoomi";
+    ViewData["MetaDescription"] = "Discover Universal City by Rajbhoomi – a premium township offering well-planned plots with modern amenities. Ideal for investment and future living. Book your site visit now.";
+    ViewData["Keywords"] = "Universal City plots, township plots for sale, premium plots in location, gated community plots, investment plots";
+}
+@section SchemaMarkup {
+    <script type="application/ld+json">
+        {
+          "@@context": "https://schema.org",
+          "@@type": "Product",
+          "name": "Universal City Township",
+          "description": "Premium township plots by Rajbhoomi with modern amenities and high investment potential.",
+          "brand": {
+            "@@type": "Brand",
+            "name": "Rajbhoomi"
+          },
+          "offers": {
+            "@@type": "Offer",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+    </script>
 }
 
 <div class="projects-grid">

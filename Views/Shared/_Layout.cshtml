@@ -3,7 +3,45 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Rajbhoomi</title>
+    <title>@ViewData["Title"]</title>
+    <meta name="description" content="@ViewData["MetaDescription"]" />
+    <meta name="keywords" content="@ViewData["Keywords"]" />
+
+
+        <!-- OG Tags -->
+        <meta property="og:title" content="Premium Township & Plots in India | Rajbhoomi">
+        <meta property="og:description" content="Explore premium township projects and investment-ready plots with Rajbhoomi. Book your site visit today.">
+        <meta property="og:image" content="https://rajbhoomi.co.in/og-image.jpg">
+        <meta property="og:url" content="https://rajbhoomi.co.in/">
+        <meta property="og:type" content="website">
+
+        <!-- Twitter Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Premium Township & Plots | Rajbhoomi">
+        <meta name="twitter:description" content="Invest in premium plots and township projects with Rajbhoomi.">
+        <meta name="twitter:image" content="https://rajbhoomi.co.in/og-image.jpg">
+
+        <!-- Schema Markup -->
+        <script type="application/ld+json">
+                    {
+                      "@@context": "https://schema.org",
+                      "@@type": "RealEstateAgent",
+                      "name": "Rajbhoomi",
+                      "url": "https://rajbhoomi.co.in",
+                      "logo": "https://rajbhoomi.co.in/logo.png",
+                      "description": "Rajbhoomi is a trusted real estate developer offering premium township projects and investment-ready plots with modern amenities.",
+                      "address": {
+                        "@@type": "PostalAddress",
+                        "addressCountry": "India"
+                      },
+                      "sameAs": [
+                        "https://www.facebook.com/",
+                        "https://www.instagram.com/"
+                      ]
+                    }
+        </script>
+    @RenderSection("SchemaMarkup", required: false)
+
     <!-- fav icon link -->
     <link rel="shortcut icon" href="~/images/fav-icon/fav-logo.png" type="image/x-icon">
     <!-- font awesome-->
