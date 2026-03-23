@@ -7619,6 +7619,10 @@ header .home-three {
     min-height: 200px;
     max-height: 426px
 }
+.projects-details h5{
+    font-weight:600;
+    margin-bottom:15px;
+}
 
 .projects-details .banner .images-optimization .cover-images-overlay {
     display: flex;
